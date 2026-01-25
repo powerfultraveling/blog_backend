@@ -1,0 +1,19 @@
+# Supabase
+# 包含本地資料庫的實際資料（如 Docker 卷宗），不應進版本控制
+supabase/.temp/
+
+# 包含本地環境的設定，有時會有敏感資訊
+.env
+.env.local
+
+# 如果你使用 Edge Functions，忽略產生的本地佈署目錄
+supabase/functions/.import_map.json
+
+# 測試相關的輸出（如果你有寫測試）
+supabase/tests/results/
+
+# 如果你使用整合的後端框架 (如 Next.js)
+node_modules/
+.next/
+out/
+build/
