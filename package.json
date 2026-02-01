@@ -1,0 +1,14 @@
+{
+  "name": "blog_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gen:types": "cd ./supabase && npx supabase gen types typescript --local > ../types/database.types.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.20.0"
+}
