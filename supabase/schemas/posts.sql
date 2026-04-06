@@ -21,6 +21,7 @@ CREATE TABLE posts (
   content text,
   cover_image_path text, -- 儲存 Supabase Storage 的路徑或 URL
   status varchar DEFAULT 'draft', -- draft, published, deleted
+  likes_count integer DEFAULT 0,
   published_at timestamptz,
   created_at timestamptz DEFAULT now(),
   deleted_at timestamptz
